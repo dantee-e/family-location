@@ -1,0 +1,15 @@
+Implementar a criacao de usuario
+  - Cliente (no app dele) criara um par e mandara a publica para assinar que os dados enviados sao dele mesmo
+  - Servidor armazena chave publica do user para checar se os dados sao do usuario correto 
+
+Implementar o endpoint /post-location-data/<chave publica> para receber os dados
+  X Checar se os dados sao enviados pelo usuario certo (criptografados, so serao lidos pelo usuario e pelos autorizados)
+
+Criar base de dados e integracao com o programa
+  - Tabela dados: user_public_key, coordenadas criptografadas, assinatura
+  - Tabela usuarios autorizados: data_owner_pubkey, grantee_pubkey, reencryption_key, grant_signature
+
+Implementar UI
+  - Pagina de login
+  - Pesquisar metodos de user auth estabelecidos no Rust
+
